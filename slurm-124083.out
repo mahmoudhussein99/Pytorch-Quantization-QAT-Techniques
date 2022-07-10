@@ -1,0 +1,189 @@
+GPU SUPPORT!
+running install
+running bdist_egg
+running egg_info
+writing opt_quant.egg-info/PKG-INFO
+writing dependency_links to opt_quant.egg-info/dependency_links.txt
+writing top-level names to opt_quant.egg-info/top_level.txt
+reading manifest file 'opt_quant.egg-info/SOURCES.txt'
+writing manifest file 'opt_quant.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_py
+creating build/lib.linux-x86_64-cpython-38
+creating build/lib.linux-x86_64-cpython-38/experiments
+copying experiments/__init__.py -> build/lib.linux-x86_64-cpython-38/experiments
+copying experiments/utils.py -> build/lib.linux-x86_64-cpython-38/experiments
+creating build/lib.linux-x86_64-cpython-38/opt_quant
+copying opt_quant/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant
+creating build/lib.linux-x86_64-cpython-38/experiments/cifar10
+copying experiments/cifar10/cifar_train_eval.py -> build/lib.linux-x86_64-cpython-38/experiments/cifar10
+copying experiments/cifar10/__init__.py -> build/lib.linux-x86_64-cpython-38/experiments/cifar10
+copying experiments/cifar10/q_model.py -> build/lib.linux-x86_64-cpython-38/experiments/cifar10
+copying experiments/cifar10/ops_count.py -> build/lib.linux-x86_64-cpython-38/experiments/cifar10
+copying experiments/cifar10/utils.py -> build/lib.linux-x86_64-cpython-38/experiments/cifar10
+creating build/lib.linux-x86_64-cpython-38/opt_quant/schemes
+copying opt_quant/schemes/quantize_base.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes
+copying opt_quant/schemes/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes
+creating build/lib.linux-x86_64-cpython-38/opt_quant/utils
+copying opt_quant/utils/QModule.py -> build/lib.linux-x86_64-cpython-38/opt_quant/utils
+copying opt_quant/utils/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/utils
+copying opt_quant/utils/prepare.py -> build/lib.linux-x86_64-cpython-38/opt_quant/utils
+copying opt_quant/utils/ops.py -> build/lib.linux-x86_64-cpython-38/opt_quant/utils
+creating build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+copying opt_quant/schemes/weight/dorefa.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+copying opt_quant/schemes/weight/lsq.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+copying opt_quant/schemes/weight/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+copying opt_quant/schemes/weight/sawb.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+copying opt_quant/schemes/weight/mimax.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight
+creating build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim
+copying opt_quant/schemes/optim/QSGD.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim
+copying opt_quant/schemes/optim/QAdam.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim
+copying opt_quant/schemes/optim/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim
+creating build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error
+copying opt_quant/schemes/error/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error
+copying opt_quant/schemes/error/absmax.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error
+copying opt_quant/schemes/error/fixed.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error
+copying opt_quant/schemes/error/adaptive.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error
+creating build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+copying opt_quant/schemes/act/minmax.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+copying opt_quant/schemes/act/dorefa.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+copying opt_quant/schemes/act/lsq.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+copying opt_quant/schemes/act/__init__.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+copying opt_quant/schemes/act/pact.py -> build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act
+running build_ext
+building 'floatxTensor_gpu' extension
+creating build/temp.linux-x86_64-cpython-38
+creating build/temp.linux-x86_64-cpython-38/cpp
+creating build/temp.linux-x86_64-cpython-38/cpp/floatxTensor_gpu
+/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-11.4.0-waeqnnqxid43jqigez4tsrz7t4brmrax/bin/nvcc -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/TH -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/THC -I/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-11.4.0-waeqnnqxid43jqigez4tsrz7t4brmrax/include -I/users/mhussein/State-of-Quantization-in-DL/env/include -I/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/python-3.8.12-dhpibk3qutj5jasu4ygzx5lqfctlhcdv/include/python3.8 -c cpp/floatxTensor_gpu/cuda_kernels.cu -o build/temp.linux-x86_64-cpython-38/cpp/floatxTensor_gpu/cuda_kernels.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -DTORCH_EXTENSION_NAME=floatxTensor_gpu -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_70,code=compute_70 -gencode=arch=compute_70,code=sm_70 -std=c++14
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/c10/core/SymInt.h(84): warning: integer conversion resulted in a change of sign
+
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/c10/core/SymInt.h(84): warning: integer conversion resulted in a change of sign
+
+/usr/bin/gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -fPIC -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/TH -I/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/include/THC -I/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-11.4.0-waeqnnqxid43jqigez4tsrz7t4brmrax/include -I/users/mhussein/State-of-Quantization-in-DL/env/include -I/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/python-3.8.12-dhpibk3qutj5jasu4ygzx5lqfctlhcdv/include/python3.8 -c cpp/floatxTensor_gpu/main.cpp -o build/temp.linux-x86_64-cpython-38/cpp/floatxTensor_gpu/main.o -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1013\" -DTORCH_EXTENSION_NAME=floatxTensor_gpu -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+In file included from cpp/floatxTensor_gpu/main.cpp:4:
+cpp/floatxTensor_gpu/floatx.hpp: In instantiation of ‘constexpr typename flx::float_traits<T>::bits_type flx::detail::reinterpret_as_bits(Float) [with Float = double; typename flx::float_traits<T>::bits_type = long unsigned int]’:
+cpp/floatxTensor_gpu/floatx.hpp:623:55:   required from here
+cpp/floatxTensor_gpu/floatx.hpp:440:12: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     return *reinterpret_cast<const typename float_traits<Float>::bits_type*>(
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         &val);
+         ~~~~~
+cpp/floatxTensor_gpu/floatx.hpp: In instantiation of ‘constexpr Float flx::detail::reinterpret_bits_as(typename flx::float_traits<T>::bits_type) [with Float = double; typename flx::float_traits<T>::bits_type = long unsigned int]’:
+cpp/floatxTensor_gpu/floatx.hpp:837:45:   required from here
+cpp/floatxTensor_gpu/floatx.hpp:449:12: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     return *reinterpret_cast<const Float*>(&bits);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cpp/floatxTensor_gpu/floatx.hpp: In instantiation of ‘static constexpr flx::detail::floatx_base< <template-parameter-1-1> >::bits_type flx::detail::floatx_base< <template-parameter-1-1> >::reinterpret_as_bits(flx::detail::floatx_base< <template-parameter-1-1> >::backend_float) [with ConcreteFloatX = flx::floatxr<>; flx::detail::floatx_base< <template-parameter-1-1> >::bits_type = long unsigned int; flx::detail::floatx_base< <template-parameter-1-1> >::backend_float = double]’:
+cpp/floatxTensor_gpu/floatx.hpp:1004:45:   required from ‘flx::detail::floatx_base< <template-parameter-1-1> >::backend_float flx::detail::floatx_base< <template-parameter-1-1> >::enforce_rounding(flx::detail::floatx_base< <template-parameter-1-1> >::backend_float) const [with ConcreteFloatX = flx::floatxr<>; flx::detail::floatx_base< <template-parameter-1-1> >::backend_float = double]’
+cpp/floatxTensor_gpu/floatx.hpp:954:24:   required from ‘void flx::detail::floatx_base< <template-parameter-1-1> >::initialize() [with ConcreteFloatX = flx::floatxr<>]’
+cpp/floatxTensor_gpu/floatx.hpp:221:9:   required from ‘flx::floatxr<BackendFloat, MetadataType>::floatxr(flx::floatxr<BackendFloat, MetadataType>::metadata_type, flx::floatxr<BackendFloat, MetadataType>::metadata_type) [with BackendFloat = double; MetadataType = short int; flx::floatxr<BackendFloat, MetadataType>::metadata_type = short int]’
+cpp/floatxTensor_gpu/main.cpp:14:43:   required from here
+cpp/floatxTensor_gpu/floatx.hpp:1039:16: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+         return *reinterpret_cast<const bits_type*>(&val);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/bin/g++ -pthread -shared -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/bzip2-1.0.8-3724biussofhsacfjmz3wxhpyfhop4zc/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/expat-2.4.1-5ic5s3h4snw5npw7v4cum3hjehb2peat/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gdbm-1.19-kcxtddo7f4ock72etijymwmriaand6wr/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/gettext-0.21-ktm75y5jzi6ixyeytfbl2xrrdisg6ig7/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/libffi-3.3-ngtxdauhrysfa5binjj7bfo7b5yncqww/lib64 -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/ncurses-6.2-cpcqrl5bezdgwjrxxk6epzdwaaugm5yr/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/openssl-1.1.1l-dxzjsykunbf4djohlntgbmqju7zf5sij/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/readline-8.1-f25ytwve7esmg47azppnvqkicqes7e5u/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/sqlite-3.36.0-m44avhsew5vw4v3w7ml3rh6g4b3xuzly/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/util-linux-uuid-2.36.2-s6c43zqijicrjlmgvbfqc7rdfwtqvl7c/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/xz-5.2.5-7gadi6uqpvd7sqjxy3mowmblmxkwg4jm/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/zlib-1.2.11-5pqnzdejy5xf2hdalxemlp4djracfzez/lib build/temp.linux-x86_64-cpython-38/cpp/floatxTensor_gpu/cuda_kernels.o build/temp.linux-x86_64-cpython-38/cpp/floatxTensor_gpu/main.o -L/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/lib -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/cuda-11.4.0-waeqnnqxid43jqigez4tsrz7t4brmrax/lib64 -L/apps/ault/spack/opt/spack/linux-centos8-zen/gcc-8.4.1/python-3.8.12-dhpibk3qutj5jasu4ygzx5lqfctlhcdv/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-38/floatxTensor_gpu.cpython-38-x86_64-linux-gnu.so
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+copying build/lib.linux-x86_64-cpython-38/floatxTensor_gpu.cpython-38-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/egg
+creating build/bdist.linux-x86_64/egg/experiments
+creating build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/cifar10/cifar_train_eval.py -> build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/cifar10/__init__.py -> build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/cifar10/q_model.py -> build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/cifar10/ops_count.py -> build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/cifar10/utils.py -> build/bdist.linux-x86_64/egg/experiments/cifar10
+copying build/lib.linux-x86_64-cpython-38/experiments/__init__.py -> build/bdist.linux-x86_64/egg/experiments
+copying build/lib.linux-x86_64-cpython-38/experiments/utils.py -> build/bdist.linux-x86_64/egg/experiments
+creating build/bdist.linux-x86_64/egg/opt_quant
+copying build/lib.linux-x86_64-cpython-38/opt_quant/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant
+creating build/bdist.linux-x86_64/egg/opt_quant/schemes
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/quantize_base.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes
+creating build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight/dorefa.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight/lsq.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight/sawb.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/weight/mimax.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/weight
+creating build/bdist.linux-x86_64/egg/opt_quant/schemes/optim
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim/QSGD.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/optim
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim/QAdam.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/optim
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/optim/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/optim
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes
+creating build/bdist.linux-x86_64/egg/opt_quant/schemes/error
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/error
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error/absmax.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/error
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error/fixed.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/error
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/error/adaptive.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/error
+creating build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act/minmax.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act/dorefa.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act/lsq.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+copying build/lib.linux-x86_64-cpython-38/opt_quant/schemes/act/pact.py -> build/bdist.linux-x86_64/egg/opt_quant/schemes/act
+creating build/bdist.linux-x86_64/egg/opt_quant/utils
+copying build/lib.linux-x86_64-cpython-38/opt_quant/utils/QModule.py -> build/bdist.linux-x86_64/egg/opt_quant/utils
+copying build/lib.linux-x86_64-cpython-38/opt_quant/utils/__init__.py -> build/bdist.linux-x86_64/egg/opt_quant/utils
+copying build/lib.linux-x86_64-cpython-38/opt_quant/utils/prepare.py -> build/bdist.linux-x86_64/egg/opt_quant/utils
+copying build/lib.linux-x86_64-cpython-38/opt_quant/utils/ops.py -> build/bdist.linux-x86_64/egg/opt_quant/utils
+byte-compiling build/bdist.linux-x86_64/egg/experiments/cifar10/cifar_train_eval.py to cifar_train_eval.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/cifar10/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/cifar10/q_model.py to q_model.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/cifar10/ops_count.py to ops_count.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/cifar10/utils.py to utils.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/experiments/utils.py to utils.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/quantize_base.py to quantize_base.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/weight/dorefa.py to dorefa.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/weight/lsq.py to lsq.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/weight/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/weight/sawb.py to sawb.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/weight/mimax.py to mimax.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/optim/QSGD.py to QSGD.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/optim/QAdam.py to QAdam.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/optim/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/error/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/error/absmax.py to absmax.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/error/fixed.py to fixed.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/error/adaptive.py to adaptive.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/act/minmax.py to minmax.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/act/dorefa.py to dorefa.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/act/lsq.py to lsq.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/act/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/schemes/act/pact.py to pact.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/utils/QModule.py to QModule.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/utils/__init__.py to __init__.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/utils/prepare.py to prepare.cpython-38.pyc
+byte-compiling build/bdist.linux-x86_64/egg/opt_quant/utils/ops.py to ops.cpython-38.pyc
+creating stub loader for floatxTensor_gpu.cpython-38-x86_64-linux-gnu.so
+byte-compiling build/bdist.linux-x86_64/egg/floatxTensor_gpu.py to floatxTensor_gpu.cpython-38.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying opt_quant.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying opt_quant.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying opt_quant.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying opt_quant.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+writing build/bdist.linux-x86_64/egg/EGG-INFO/native_libs.txt
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:411: UserWarning: Attempted to use ninja as the BuildExtension backend but we could not find ninja.. Falling back to using the slow distutils backend.
+  warnings.warn(msg.format('we could not find ninja.'))
+/users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/torch/utils/cpp_extension.py:813: UserWarning: The detected CUDA version (11.4) has a minor version mismatch with the version that was used to compile PyTorch (11.3). Most likely this shouldn't be a problem.
+  warnings.warn(CUDA_MISMATCH_WARN.format(cuda_str_version, torch.version.cuda))
+zip_safe flag not set; analyzing archive contents...
+__pycache__.floatxTensor_gpu.cpython-38: module references __file__
+creating dist
+creating 'dist/opt_quant-0.0.2-py3.8-linux-x86_64.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing opt_quant-0.0.2-py3.8-linux-x86_64.egg
+creating /users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/opt_quant-0.0.2-py3.8-linux-x86_64.egg
+Extracting opt_quant-0.0.2-py3.8-linux-x86_64.egg to /users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages
+Adding opt-quant 0.0.2 to easy-install.pth file
+
+Installed /users/mhussein/State-of-Quantization-in-DL/env/lib/python3.8/site-packages/opt_quant-0.0.2-py3.8-linux-x86_64.egg
+Processing dependencies for opt-quant==0.0.2
+Finished processing dependencies for opt-quant==0.0.2

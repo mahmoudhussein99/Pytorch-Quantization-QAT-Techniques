@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: opt-quant
+Version: 0.0.2
+Summary: opt_quant: Optimal shift quantizer
+Requires-Python: >=3.6
