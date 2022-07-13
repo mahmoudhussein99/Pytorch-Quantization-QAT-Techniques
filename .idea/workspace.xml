@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ee821869-6b70-411f-95aa-ebcaf4c501c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.script.sh.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/caltech101/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/caltech101/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/caltech101/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/caltech101/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/caltech101/run_caltech_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/caltech101/run_caltech_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/caltech101/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/caltech101/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/caltech101/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/caltech101/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar10/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar10/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar10/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar10/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar10/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar10/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar10/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar10/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar100/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar100/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar100/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar100/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar100/run_cifar_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar100/run_cifar_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar100/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar100/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/cifar100/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/cifar100/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/dtd/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/dtd/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/dtd/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/dtd/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/dtd/run_dtd_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/dtd/run_dtd_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/dtd/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/dtd/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/dtd/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/dtd/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/fgvc/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgvc/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/fgvc/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgvc/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/fgvc/run_fgvc_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgvc/run_fgvc_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/fgvc/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgvc/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/fgvc/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgvc/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/food101/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/food101/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/food101/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/food101/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/food101/run_food_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/food101/run_food_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/food101/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/food101/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/food101/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/food101/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordFlowers/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordFlowers/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordFlowers/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordFlowers/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordFlowers/run_oxford_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordFlowers/run_oxford_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordFlowers/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordFlowers/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordFlowers/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordFlowers/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordPets/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordPets/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordPets/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordPets/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordPets/run_oxford_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordPets/run_oxford_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordPets/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordPets/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/oxfordPets/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/oxfordPets/storage_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/stanfordCars/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/stanfordCars/.ipynb_checkpoints/run_cifar_on_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/stanfordCars/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/stanfordCars/.ipynb_checkpoints/speedup_experiments_ault-checkpoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/stanfordCars/run_stanford_on_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/stanfordCars/run_stanford_on_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/stanfordCars/speedup_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/stanfordCars/speedup_experiments_ault.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/stanfordCars/storage_experiments_ault.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/stanfordCars/storage_experiments_ault.sh" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BqmODPeRpPuA2msGK2XtstVjO3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/experiments" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GO\Documents\bachelor\State-of-Quantization-DL-All-Experiments\experiments" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee821869-6b70-411f-95aa-ebcaf4c501c3" name="Changes" comment="" />
+      <created>1657641954557</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657641954557</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
