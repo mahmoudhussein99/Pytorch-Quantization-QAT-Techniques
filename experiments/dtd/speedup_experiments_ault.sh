@@ -3,7 +3,7 @@ ARCH=resnet18
 seeds=(512 1024 2048)
 
 #for SEED in "${seeds[@]}"; do
-#  sbatch job_ault.sbatch  "python3  cifar_train_eval.py  --seed ${SEED} --model ${ARCH}"
+#  sbatch job_ault.sbatch  "python3  tl_train_eval.py  --seed ${SEED} --model ${ARCH}"
 #done
 
 act_schemes=(pact)

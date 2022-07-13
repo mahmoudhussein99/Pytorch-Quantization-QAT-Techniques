@@ -1,35 +1,36 @@
 
 ARCH=resnet18
 DATASET=cifar10
-LREPOCH=30
-EPOCHS=100
+LREPOCH=50
+EPOCHS=150
 
 
 
-seeds=(512 1025 2048 4096 8192)
+seeds=(512 1025 2048)
+# 4096 8192)
 
 #Baselines
 #for SEED in "${seeds[@]}"; do
-#  sbatch job_ault.sbatch  "python3  tl_train_eval.py  --seed ${SEED} --model mobilenet"
+#  sbatch job_ault.sbatch  "python3  tl_train_eval.py  --seed ${SEED} --model resnet50"
 #done
 
 
 
 act_rep=(int)
-act_bits=(4)
-act_schemes=(dorefa_act)
+act_bits=(8)
+act_schemes=(dorefa_act pact lsq_act)
 
 weight_rep=(int)
-weight_bits=(4)
+weight_bits=(8)
 weight_schemes=(lsq_weight sawb dorefa_weight)
 
 
-#4-bit Forward Quantization
-#for SEED in "${seeds[@]}"; do
-#  for AS in "${act_schemes[@]}"; do
-#    for WS in "${weight_schemes[@]}"; do
-#          sbatch job_ault.sbatch "python3 tl_train_eval.py  --seed ${SEED} --act_qmode ${AS} --act_bits 4  --weight_qmode ${WS} --weight_bits 4  --shortcut_quant False --model ${ARCH}"
-#            done done done
+##8-bit Forward Quantization
+for SEED in "${seeds[@]}"; do
+  for AS in "${act_schemes[@]}"; do
+    for WS in "${weight_schemes[@]}"; do
+          sbatch job_ault.sbatch "python3 cifar_train_eval.py --lr 0.01 --seed ${SEED} --act_qmode ${AS} --act_bits 8  --weight_qmode ${WS} --weight_bits 8  --shortcut_quant False --model ${ARCH}"
+            done done done
 
 
 
@@ -44,10 +45,10 @@ error_roundings=(nearest stochastic)
 #          sbatch job_ault.sbatch "python3 tl_train_eval.py  --seed ${SEED} --act_qmode lsq_act --act_bits 4  --weight_qmode dorefa_weight --weight_bits 4 --error_qmode ${ES} --error_rounding ${ER} --error_man 0 --error_sig 3 --error_rep rdx2 --shortcut_quant False --error_scale 1000000.0 --model ${ARCH}"
 #            done done done
 
-##With 8-bit Error quantization
+#With 8-bit Error quantization
 #for SEED in "${seeds[@]}"; do
 #    for ES in "${error_scheme[@]}"; do
-#          sbatch job_ault.sbatch "python3 tl_train_eval.py  --seed ${SEED} --act_qmode lsq_act --act_bits 4  --weight_qmode dorefa_weight --weight_bits 4 --error_qmode ${ES} --error_rounding nearest --error_man 2 --error_sig 5 --error_rep fp --shortcut_quant False --error_scale 1000000.0 --model ${ARCH}"
+#          sbatch job_ault.sbatch "python3 tl_train_eval.py  --seed ${SEED} --act_qmode lsq_act --act_bits 8  --weight_qmode dorefa_weight --weight_bits 8 --error_qmode ${ES} --error_rounding nearest --error_man 2 --error_sig 5 --error_rep fp --shortcut_quant False --error_scale 1000000.0 --model ${ARCH}"
 #          done done
 
 
