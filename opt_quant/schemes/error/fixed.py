@@ -39,8 +39,8 @@ class fixed(QuantizeBase):
     def extra_repr(self) -> str:
         str_ = 'scale={}, '.format(self.scale)
         str_ += 'bits={}, ' \
-                'rounding={}, representation={}, scale={}'.format(
-            self.bitwidth, self.rounding, self.representation, self.scale)
+                'rounding={}, representation={}'.format(
+            self.bitwidth, self.rounding, self.representation)
         if self.representation == 'fp':
             str_ += '(sig={}, man={})'.format(self.sig_bits, self.man_bits)
 

@@ -1,0 +1,26 @@
+# Core deep learning
+torch>=1.10
+torchvision>=0.11
+
+# QModule (quantized Multi-Head Attention, QMultiheadAttention) is derived from fairseq
+fairseq>=0.12.2
+
+# Experiment utilities / data loading
+numpy
+pandas
+opencv-python
+imutils
+joblib
+tqdm
+scikit-learn
+matplotlib
+pretrainedmodels
+
+# Experiment tracking
+wandb
+
+# Optional: 8-bit optimizer (--optim_qmode bnb)
+# bitsandbytes
+
+# Optional: model summary in experiments/caltech101/q_model.py
+# torchinfo

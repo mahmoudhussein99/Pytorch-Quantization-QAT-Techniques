@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#546e7a"/>
+    </marker>
+  </defs>
+
+  <text x="490" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#1a237e">opt_quant — pluggable quantization schemes</text>
+
+  <!-- Root -->
+  <rect x="390" y="52" width="200" height="48" rx="10" fill="#1a237e"/>
+  <text x="490" y="82" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">opt_quant</text>
+
+  <!-- Connectors -->
+  <g stroke="#546e7a" stroke-width="2" fill="none">
+    <path d="M490 100 V120"/>
+    <path d="M125 120 H830"/>
+    <line x1="125" y1="120" x2="125" y2="140" marker-end="url(#arrow2)"/>
+    <line x1="360" y1="120" x2="360" y2="140" marker-end="url(#arrow2)"/>
+    <line x1="595" y1="120" x2="595" y2="140" marker-end="url(#arrow2)"/>
+    <line x1="830" y1="120" x2="830" y2="140" marker-end="url(#arrow2)"/>
+  </g>
+
+  <!-- Category headers -->
+  <g stroke="#37474f" stroke-width="1.5">
+    <rect x="20" y="140" width="210" height="46" rx="9" fill="#e8eaf6"/>
+    <rect x="255" y="140" width="210" height="46" rx="9" fill="#e3f2fd"/>
+    <rect x="490" y="140" width="210" height="46" rx="9" fill="#fdecea"/>
+    <rect x="725" y="140" width="210" height="46" rx="9" fill="#e8f5e9"/>
+  </g>
+  <text x="125" y="169" text-anchor="middle" font-size="15" font-weight="700" fill="#1a237e">Weights</text>
+  <text x="360" y="169" text-anchor="middle" font-size="15" font-weight="700" fill="#0d47a1">Activations</text>
+  <text x="595" y="169" text-anchor="middle" font-size="15" font-weight="700" fill="#b71c1c">Error (gradients)</text>
+  <text x="830" y="169" text-anchor="middle" font-size="15" font-weight="700" fill="#1b5e20">Optimizer state</text>
+
+  <!-- Item lists -->
+  <g stroke="#b0bec5" stroke-width="1.5">
+    <rect x="20" y="194" width="210" height="150" rx="9" fill="#fafafa"/>
+    <rect x="255" y="194" width="210" height="150" rx="9" fill="#fafafa"/>
+    <rect x="490" y="194" width="210" height="150" rx="9" fill="#fafafa"/>
+    <rect x="725" y="194" width="210" height="150" rx="9" fill="#fafafa"/>
+  </g>
+  <g font-size="13.5" fill="#37474f">
+    <text x="40" y="226">dorefa_weight (DoReFa-Net)</text>
+    <text x="40" y="256">lsq_weight (learned step)</text>
+    <text x="40" y="286">sawb (statistics-aware)</text>
+    <text x="40" y="316">minmax_weight (observer)</text>
+
+    <text x="275" y="226">dorefa_act (DoReFa-Net)</text>
+    <text x="275" y="256">lsq_act (learned step)</text>
+    <text x="275" y="286">pact (learned clipping &#945;)</text>
+    <text x="275" y="316">minmax_act (observer)</text>
+
+    <text x="510" y="226">fixed (constant scale)</text>
+    <text x="510" y="256">absmax (max-abs scale)</text>
+    <text x="510" y="286">adaptive (tunable scale)</text>
+
+    <text x="745" y="226">QSGD (quantized SGD)</text>
+    <text x="745" y="256">QAdam (quantized Adam)</text>
+  </g>
+
+  <!-- Global knobs -->
+  <rect x="20" y="368" width="455" height="112" rx="9" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="40" y="396" font-size="15" font-weight="700" fill="#e65100">Global knobs (every scheme)</text>
+  <text x="40" y="422" font-size="13" fill="#5d4037"><tspan font-weight="700">representation:</tspan> int &#183; fp (signif/mantissa) &#183; rdx2 &#183; rdx4</text>
+  <text x="40" y="446" font-size="13" fill="#5d4037"><tspan font-weight="700">rounding:</tspan> nearest &#183; stochastic</text>
+  <text x="40" y="470" font-size="13" fill="#5d4037"><tspan font-weight="700">bitwidth:</tspan> arbitrary (4/8/16/32); rdx2/rdx4 fixed at 4-bit</text>
+
+  <!-- Utils -->
+  <rect x="490" y="368" width="445" height="112" rx="9" fill="#eceff1" stroke="#607d8b" stroke-width="1.5"/>
+  <text x="510" y="396" font-size="15" font-weight="700" fill="#263238">opt_quant.utils</text>
+  <text x="510" y="422" font-size="13" fill="#37474f"><tspan font-weight="700">ops.py</tspan> — int/fp/rdx2/rdx4 kernels (CPU + CUDA)</text>
+  <text x="510" y="446" font-size="13" fill="#37474f"><tspan font-weight="700">QModule.py</tspan> — QLinear, QConv2d, QBatchNorm2d, RangeBN, QMultiheadAttention</text>
+  <text x="510" y="470" font-size="13" fill="#37474f"><tspan font-weight="700">prepare.py</tspan> — swap nn.Conv2d/nn.Linear for quantized layers</text>
+
+  <!-- Experiments -->
+  <rect x="20" y="500" width="915" height="112" rx="9" fill="#f3e5f5" stroke="#8e24aa" stroke-width="1.5"/>
+  <text x="40" y="528" font-size="15" font-weight="700" fill="#4a148c">experiments/ — training harness</text>
+  <text x="40" y="554" font-size="13" fill="#4a148c"><tspan font-weight="700">experiments/utils.py</tspan> — shared argparse (--weight_qmode, --act_qmode, --error_qmode, …) and optimizer builders</text>
+  <text x="40" y="578" font-size="13" fill="#4a148c"><tspan font-weight="700">experiments/caltech101/</tspan> — QAT ResNet-18 / MobileNetV2 on Caltech-101 (train_eval, q_model, ops_count)</text>
+  <text x="40" y="602" font-size="13" fill="#4a148c"><tspan font-weight="700">cpp/floatxTensor_gpu/</tspan> — CUDA extension backing the fp/radix floatx rounding</text>
+</svg>

@@ -1,5 +1,4 @@
 import torch
-from torch.quantization.observer import MovingAverageMinMaxObserver
 
 import opt_quant.utils
 

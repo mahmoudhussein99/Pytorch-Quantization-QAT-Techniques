@@ -122,8 +122,8 @@ class QSGD(Optimizer, QuantizeBase):
         self.q_scheme = scheme
 
     def __setstate__(self, state):
-        #todo: Add something related to quantization
-        super(SGD, self).__setstate__(state)
+        # todo: Add something related to quantization
+        super(QSGD, self).__setstate__(state)
         for group in self.param_groups:
             group.setdefault('nesterov', False)
 

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="fwd" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1565c0"/>
+    </marker>
+    <marker id="bwd" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#c62828"/>
+    </marker>
+  </defs>
+
+  <text x="490" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#1a237e">QAT training loop</text>
+
+  <!-- Forward row -->
+  <g stroke="#37474f" stroke-width="1.5">
+    <rect x="20" y="76" width="130" height="84" rx="10" fill="#e8eaf6"/>
+    <rect x="200" y="62" width="300" height="112" rx="12" fill="#e3f2fd"/>
+    <rect x="550" y="76" width="120" height="84" rx="10" fill="#e0f7fa"/>
+    <rect x="720" y="76" width="120" height="84" rx="10" fill="#e8f5e9"/>
+  </g>
+  <text x="85" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1a237e">Input x</text>
+  <text x="85" y="133" text-anchor="middle" font-size="12" fill="#455a64">mini-batch</text>
+
+  <text x="350" y="94" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0d47a1">Quantized model</text>
+  <text x="350" y="118" text-anchor="middle" font-size="12" fill="#455a64">QConv2d / QLinear — quantized weights</text>
+  <text x="350" y="138" text-anchor="middle" font-size="12" fill="#455a64">QBatchNorm2d / activation quantizers</text>
+  <text x="350" y="158" text-anchor="middle" font-size="12" fill="#455a64">quantize &#8594; dequantize (int / fp / radix)</text>
+
+  <text x="610" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#006064">Logits</text>
+  <text x="610" y="133" text-anchor="middle" font-size="12" fill="#455a64">FP32</text>
+
+  <text x="780" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1b5e20">Loss</text>
+  <text x="780" y="133" text-anchor="middle" font-size="12" fill="#455a64">cross-entropy</text>
+
+  <g stroke="#1565c0" stroke-width="2.5" fill="none" marker-end="url(#fwd)">
+    <line x1="150" y1="118" x2="194" y2="118"/>
+    <line x1="500" y1="118" x2="544" y2="118"/>
+    <line x1="670" y1="118" x2="714" y2="118"/>
+  </g>
+  <text x="325" y="52" font-size="12" font-weight="700" fill="#1565c0">forward</text>
+
+  <!-- Backward row -->
+  <g stroke="#37474f" stroke-width="1.5">
+    <rect x="720" y="250" width="180" height="80" rx="10" fill="#fdecea"/>
+    <rect x="460" y="250" width="220" height="80" rx="10" fill="#fff3e0"/>
+    <rect x="180" y="250" width="240" height="80" rx="10" fill="#e8f5e9"/>
+    <rect x="20" y="250" width="120" height="80" rx="10" fill="#eceff1"/>
+  </g>
+  <text x="810" y="282" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b71c1c">Backward (STE)</text>
+  <text x="810" y="304" text-anchor="middle" font-size="11.5" fill="#b71c1c">identity through rounding</text>
+
+  <text x="570" y="274" text-anchor="middle" font-size="13.5" font-weight="700" fill="#e65100">Error quantization</text>
+  <text x="570" y="294" text-anchor="middle" font-size="11.5" fill="#e65100">--error_qmode fixed | absmax | adaptive</text>
+  <text x="570" y="313" text-anchor="middle" font-size="11.5" fill="#e65100">--error_rep / --error_rounding</text>
+
+  <text x="300" y="274" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1b5e20">Optimizer</text>
+  <text x="300" y="294" text-anchor="middle" font-size="11.5" fill="#1b5e20">SGD / Adam / QSGD / QAdam</text>
+  <text x="300" y="313" text-anchor="middle" font-size="11.5" fill="#1b5e20">quantized momentum &amp; moments</text>
+
+  <text x="80" y="282" text-anchor="middle" font-size="13.5" font-weight="700" fill="#263238">FP32 master</text>
+  <text x="80" y="304" text-anchor="middle" font-size="13.5" font-weight="700" fill="#263238">weights</text>
+
+  <g stroke="#c62828" stroke-width="2.5" fill="none" marker-end="url(#bwd)">
+    <line x1="780" y1="164" x2="780" y2="244"/>
+    <line x1="720" y1="290" x2="686" y2="290"/>
+    <line x1="460" y1="290" x2="426" y2="290"/>
+    <line x1="180" y1="290" x2="146" y2="290"/>
+    <line x1="80" y1="250" x2="80" y2="210"/>
+  </g>
+  <text x="800" y="205" font-size="12" font-weight="700" fill="#c62828">backward</text>
+
+  <!-- Weight re-quantization arrow back to model -->
+  <path d="M80 210 V196 H200" stroke="#c62828" stroke-width="2.5" fill="none" marker-end="url(#bwd)"/>
+  <text x="150" y="190" text-anchor="middle" font-size="11" fill="#c62828">re-quantize weights</text>
+</svg>
